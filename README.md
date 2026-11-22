@@ -20,7 +20,7 @@ Run these on the **Proxmox node shell**. The script creates a Debian 12 LXC (1 c
 **Option A: from GitHub.** Push this folder to a repo, then run:
 
 ```bash
-PLATEFUL_REPO=youruser/plateful bash -c "$(curl -fsSL https://raw.githubusercontent.com/youruser/plateful/main/install/plateful.sh)"
+STORAGE=local-ssd500ham PLATEFUL_REPO=NoksBer/Platefulv4-SelfHosted bash -c "$(curl -fsSL "https://raw.githubusercontent.com/NoksBer/Platefulv4-SelfHosted/main/plateful/install/plateful.sh?$(date +%s)")"
 ```
 
 **Option B: no GitHub.** Copy `plateful.tar.gz` and `install/plateful.sh` to the node (WinSCP or scp), then run:
