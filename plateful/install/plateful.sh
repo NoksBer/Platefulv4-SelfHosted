@@ -81,7 +81,7 @@ fi
 
 msg "Creating LXC $CTID ($CT_NAME)"
 pct create "$CTID" "$TEMPLATE_STORAGE:vztmpl/$TEMPLATE" \
-  --hostname "$CT_NAME"--cores "$CORES" --memory "$RAM" --swap 256 \
+  --hostname "$CT_NAME" --cores "$CORES" --memory "$RAM" --swap 256 \
   --rootfs "$STORAGE:$DISK" --net0 "name=eth0,bridge=$BRIDGE,ip=dhcp" \
   --unprivileged 1 --features nesting=1 --onboot 1 --ostype debian \
   --description "Plateful meal planner (http port $PORT)"
